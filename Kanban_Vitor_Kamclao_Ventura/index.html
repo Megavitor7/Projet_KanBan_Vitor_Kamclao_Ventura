@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and lol</title>
+
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <script src="./public/js/drag.js" defer></script>
+    <script src="./public/js/todo.js" defer></script>
+  </head>
+  <body>
+    <div class="board">
+      <form id="todo-form">
+        <input type="text" placeholder="Ayoub le noob..." id="todo-input" />
+        <button type="submit">Ajouter</button>
+      </form>
+
+      <div class="lanes">
+        <div class="swim-lane" id="todo-lane">
+          <h3 class="heading">A faire</h3>
+
+          <p class="task" draggable="true">Rien faire</p>
+          <p class="task" draggable="true">Rien faire</p>
+          <p class="task" draggable="true">Encore plus rien faire</p>
+        </div>
+
+        <div class="swim-lane">
+          <h3 class="heading">En train de le faire</h3>
+
+          <p class="task" draggable="true">Mdr je vais faire qqch</p>
+        </div>
+
+        <div class="swim-lane">
+          <h3 class="heading">Finito</h3>
+
+          <p class="task" draggable="true">
+            Chiller
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
